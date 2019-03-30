@@ -1,0 +1,38 @@
+
+div > form{
+    margin: 0 auto;
+}
+
+.search{
+    width: 500px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search-button{
+    padding: 0 3px;
+    width: 60px;
+    border-left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media (min-width: 576px){
+    .search{
+        width: 400px !important;
+    }
+    .search-button{
+        width: 60px !important;
+    }
+}
+
+@media (max-width: 990px){
+    #nav{
+        text-align: center;
+    }
+    .search{
+        width: 80%;
+    }
+    .search-button{
+        width: 20%;
+    }
+}

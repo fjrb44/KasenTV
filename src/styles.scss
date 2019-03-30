@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;   
+}
+
+a:hover, a:focus{
+    border: 0;
+}
+
+body{
+    min-width: 250px;
+}
