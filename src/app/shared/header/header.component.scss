@@ -17,6 +17,10 @@ div > form > div{
     border-bottom-right-radius: 5px;
 }
 
+a{
+    color: white;
+}
+
 @media (min-width: 576px){
     .search{
         width: 400px !important;

@@ -12,13 +12,19 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
+
   login(){
-    this.loginService.login().then( (data) => {
-      console.log(data);
-      alert("Loggeado exitosamente!");
-    }).catch((error)=>{
-      console.log(error);
-      alert("Loggeado mal");
-    });
+    this.loginService.login();
+  }
+
+  logoff(){
+    this.loginService.logoff();
+  }
+
+  isLogged(){
+    return this.loginService.isLoggedIn();
+  }
+  console(){
+    console.log(this.loginService.isLoggedIn());
   }
 }

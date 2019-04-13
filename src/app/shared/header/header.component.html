@@ -51,9 +51,22 @@
           </li>
           
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" (click)="login()">
+            <a class="nav-link py-3 px-0 px-lg-3" (click)="login()" *ngIf="!loginService.loged;else logged">
               Login
             </a>
+            <ng-template #logged>
+                <a class="nav-link py-3 px-0 px-lg-3" (click)="logoff()">
+                  Logoff
+                </a>
+            </ng-template>
+            
+          </li>
+          <li>
+            <div>
+              <button (click)="console()">
+                console
+              </button>
+            </div>
           </li>
         </ul>
       </div>
