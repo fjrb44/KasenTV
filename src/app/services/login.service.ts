@@ -26,7 +26,6 @@ export class LoginService {
     })
     .catch((error)=>{
       console.log(typeof(error));
-      alert("Ha habido un error al intentar logguearse");
       this.loged = false;
     });
   }
